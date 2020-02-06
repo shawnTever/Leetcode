@@ -32,11 +32,11 @@ public class sumnum {
     public static int[] twoSum2(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int j = 0; j < nums.length; j++){
-            map.put(nums[j], j);
             int find = target - nums[j];
-            if (map.containsKey(find) && (find != nums[j])) {
+            if (map.containsKey(find)) {
                 return new int[]{j, map.get(find)};
             }
+            map.put(nums[j], j);
         }
         return null;
     }
