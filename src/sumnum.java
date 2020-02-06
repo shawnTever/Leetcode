@@ -29,6 +29,18 @@ public class sumnum {
         return null;
     }
 
+    public static int[] twoSum2(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int j = 0; j < nums.length; j++){
+            map.put(nums[j], j);
+            int find = target - nums[j];
+            if (map.containsKey(find) && (find != nums[j])) {
+                return new int[]{j, map.get(find)};
+            }
+        }
+        return null;
+    }
+
 
     public static void main(String[] args) {
         int[] nums = new int[]{2, 7, 11, 15};
@@ -36,7 +48,7 @@ public class sumnum {
         int target1 = 18;
         int[] position = twoSum(nums, target);
         int[] position1 = twoSum1(nums, target1);
-        int[] position2 = twoSum(nums, target);
+        int[] position2 = twoSum2(nums, target);
         System.out.println(Arrays.toString(position));
         System.out.println(Arrays.toString(position1));
         System.out.println(Arrays.toString(position2));
