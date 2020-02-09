@@ -36,7 +36,7 @@ public class AddLinklist {
             int y = (q != null)? q.val : 0;
             int sum = x + y + carry;
             carry = sum / 10;
-            
+
             if (first == null) {
                 first = last = new ListNode(sum % 10);
             }
