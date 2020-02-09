@@ -29,15 +29,22 @@ class ListNode{
 
 public class AddLinklist {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode p = l1, q = l2, l3 = null;
+        ListNode p = l1, q = l2, first = null, last = null;
         int carry = 0;
         while (p != null || q != null) {
             int x = (p != null)? p.val : 0;
             int y = (q != null)? q.val : 0;
             int sum = x + y + carry;
             carry = sum / 10;
-            l3.val = sum;
-            l3 = l3.next;
+            
+            if (first == null) {
+                first = last = new ListNode(sum % 10);
+            }
+            else {
+                last.next = new ListNode(sum % 10);
+                last = last.next;
+            }
+
             if (p != null) {
                 p = p.next;
             }
@@ -47,7 +54,7 @@ public class AddLinklist {
 
         }
 
-        return l3;
+        return first;
     }
 
     public static void main(String[] args) {
