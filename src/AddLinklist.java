@@ -1,5 +1,7 @@
 import org.junit.Test;
 
+import java.util.LinkedList;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -15,7 +17,7 @@ class ListNode{
     public ListNode(int x) { val = x; }
 
     @Override
-    public String toString(){
+    public String toString() {
         if (next == null) {
             return Integer.toString(val);
         }
@@ -26,44 +28,49 @@ class ListNode{
 }
 
 public class AddLinklist {
-    ListNode first, last;
-
-    public void add(int i){
-        if (first == null) {
-            first = last = new ListNode(i);
-        }
-        else {
-            last.next = new ListNode(i);
-            last = last.next;
-        }
-    }
-
-    @Override
-    public String toString() {
-        if (first == null) {
-            return " ";
-        }
-        else {
-            return first.toString();
-        }
-    }
-
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode p = l1, q = l2, l3 = null;
+        int carry = 0;
+        while (p != null || q != null) {
+            int x = (p != null)? p.val : 0;
+            int y = (q != null)? q.val : 0;
+            int sum = x + y + carry;
+            carry = sum / 10;
+            l3.val = sum;
+            l3 = l3.next;
+            if (p != null) {
+                p = p.next;
+            }
+            if (q != null) {
+                q = q.next;
+            }
 
-        return l1;
+        }
+
+        return l3;
     }
 
     public static void main(String[] args) {
-        AddLinklist l1 = new AddLinklist();
-        AddLinklist l2 = new AddLinklist();
-        l1.add(2);
-        l1.add(4);
-        l1.add(3);
-        l2.add(5);
-        l2.add(6);
-        l2.add(4);
+//        LinkedList<Integer> ll = new LinkedList<>();
+//        ll.add(3);
+//        ll.add(4);
+//        ll.add(5);
+//        int g = ll.get(1);
+//        System.out.println("ll: " + ll);
+//        System.out.println("get: " + g);
+
+
+        ListNode l1 = new ListNode(2);
+        ListNode l2 = new ListNode(5);
+        l1.next = new ListNode(4);
+        l1.next.next = new ListNode(3);
+        l2.next = new ListNode(6);
+//        l2.next.next = new ListNode(4);
         System.out.println("l1: " + l1 );
         System.out.println("l2: " + l2);
+        AddLinklist l = new AddLinklist();
+        ListNode l3 = l.addTwoNumbers(l1, l2);
+        System.out.println("l3: " + l3);
 
     }
 
