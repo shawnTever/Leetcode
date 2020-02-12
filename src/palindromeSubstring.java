@@ -10,7 +10,7 @@ public class palindromeSubstring {
             m = i;
             n = m + 1;
             p = m + 2;
-
+            
             while (m >= 0 && n <= s.length() - 1) {
                 if (s.charAt(m) == s.charAt(n)) {
                     m--;
