@@ -1,4 +1,8 @@
-public class ZConvert {
+public class _6_ZConvert {
+    /**
+     * @Function_Name: convert
+     * @NOTE: centre spread
+     */
     public String convert(String s, int numRows) {
         StringBuilder cov = new StringBuilder();
         int len = s.length();
@@ -14,7 +18,7 @@ public class ZConvert {
     }
 
     public static void main(String[] args) {
-        ZConvert a = new ZConvert();
+        _6_ZConvert a = new _6_ZConvert();
         String s = "LEETCODEISHIRING";
         int numRows = 3;
         String answer = a.convert(s, numRows);

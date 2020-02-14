@@ -3,7 +3,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class lengthOfLongestSubstring {
+public class _3_lengthOfLongestSubstring {
     public boolean allUnique(String s) {
         Set<Character> set = new HashSet<>();
         for (char ch : s.toCharArray()) {
@@ -19,7 +19,7 @@ public class lengthOfLongestSubstring {
     }
 
     public static void main(String[] args) {
-        lengthOfLongestSubstring substring = new lengthOfLongestSubstring();
+        _3_lengthOfLongestSubstring substring = new _3_lengthOfLongestSubstring();
         String s = "opsacbabcfddvgd";
         int ans = 0;
         for (int i = 0; i <= s.length(); i++) {

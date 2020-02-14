@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class sumnum {
+public class _1_sumnum {
 
     public static int[] twoSum(int[] nums, int target) {
         for (int n = 0; n < nums.length; n++) {

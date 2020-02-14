@@ -1,4 +1,4 @@
-public class palindromeSubstring {
+public class _5_palindromeSubstring {
     /**
      * @Function_Name: longestPalindrome
      * @NOTE: centre spread
@@ -50,7 +50,7 @@ public class palindromeSubstring {
     }
 
     public static void main(String[] args) {
-        palindromeSubstring pal = new palindromeSubstring();
+        _5_palindromeSubstring pal = new _5_palindromeSubstring();
         String test = "cabbacdvadadada";
         String s = pal.longestPalindrome(test);
         System.out.println(s);
