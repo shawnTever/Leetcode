@@ -1,8 +1,8 @@
 public class palindromeSubstring {
-/**
- * @Function_Name: longestPalindrome
- * @NOTE: centre spread
- */
+    /**
+     * @Function_Name: longestPalindrome
+     * @NOTE: centre spread
+     */
     public String longestPalindrome(String s) {
         int m, n, p;
         String str = "";
@@ -10,7 +10,7 @@ public class palindromeSubstring {
             m = i;
             n = m + 1;
             p = m + 2;
-            
+
             while (m >= 0 && n <= s.length() - 1) {
                 if (s.charAt(m) == s.charAt(n)) {
                     m--;
@@ -19,7 +19,6 @@ public class palindromeSubstring {
                         str = s.substring(m + 1, n);
 //                        System.out.println(str);
                     }
-
                 }
                 else {
                     break;
@@ -40,6 +39,14 @@ public class palindromeSubstring {
             }
         }
         return str;
+    }
+
+    /**
+     * @Function_Name: longestPalindrome1
+     * @NOTE: Manacher
+     */
+    public String longestPalindrome1(String s) {
+        return "";
     }
 
     public static void main(String[] args) {
