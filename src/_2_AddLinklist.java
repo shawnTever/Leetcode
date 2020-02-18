@@ -27,7 +27,7 @@ class ListNode{
     }
 }
 
-public class AddLinklist {
+class AddLinklist {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode p = l1, q = l2, first = null, last = null;
         int carry = 0;
