@@ -41,11 +41,23 @@ public class _572_isSubtree {
         }
     }
 
+
+
+    private String inOrder(TreeNode tree) {
+        if (tree != null) {
+            String leftStr = inOrder(tree.left);
+            String rightStr = inOrder(tree.right);
+            return (leftStr.isEmpty() ? leftStr : leftStr + " " ) + tree.val
+                    + (rightStr.isEmpty() ? rightStr : " " + rightStr);
+        }
+        return "";
+    }
+
     private String preOrder(TreeNode tree) {
         if (tree != null) {
             String leftStr = preOrder(tree.left);
             String rightStr = preOrder(tree.right);
-            return (leftStr.isEmpty() ? leftStr : leftStr + " " ) + tree.val
+            return tree.val + (leftStr.isEmpty() ? leftStr : " "  + leftStr)
                     + (rightStr.isEmpty() ? rightStr : " " + rightStr);
         }
         return "";
