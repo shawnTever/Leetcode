@@ -46,7 +46,7 @@ public class Have_Some_unknown_Porblem_236_LowestCommonAncestor_LCA {
             insertTree(root, node);
         }
     }
-    
+
     private String inOrder(TreeNode tree) {
         if (tree != null) {
             String leftStr = inOrder(tree.left);
