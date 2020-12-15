@@ -12,7 +12,7 @@ public class _1_sumnum {
                 }
             }
         }
-        return null;
+        return new int[0];
     }
 
     public static int[] twoSum1(int[] nums, int target) {
@@ -26,7 +26,7 @@ public class _1_sumnum {
                 return new int[]{j, map.get(find)};
             }
         }
-        return null;
+        return new int[0];
     }
 
     public static int[] twoSum2(int[] nums, int target) {
@@ -38,7 +38,7 @@ public class _1_sumnum {
             }
             map.put(nums[j], j);
         }
-        return null;
+        return new int[0];
     }
 
 
