@@ -2,8 +2,8 @@ public class _101_SymmetricTree {
 
     public class TreeNode {
         int val;
-        _572_isSubtree.TreeNode left;
-        _572_isSubtree.TreeNode right;
+        TreeNode left;
+        TreeNode right;
         TreeNode(int x) { val = x; }
     }
 
