@@ -2,31 +2,6 @@ import org.junit.Test;
 
 import java.util.LinkedList;
 
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
-
-class ListNode{
-    int val;
-    ListNode next;
-    public ListNode(int x) { val = x; }
-
-    @Override
-    public String toString() {
-        if (next == null) {
-            return Integer.toString(val);
-        }
-        else {
-            return Integer.toString(val) + next;
-        }
-    }
-}
-
 class AddLinklist {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode p = l1, q = l2, first = null, last = null;
