@@ -8,4 +8,13 @@ public class Node {
         this.next = null;
         this.random = null;
     }
+
+    @Override
+    public String toString() {
+        if (next == null) {
+            return Integer.toString(val);
+        } else {
+            return Integer.toString(val) + next;
+        }
+    }
 }
