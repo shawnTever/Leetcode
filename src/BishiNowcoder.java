@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class nowcoder {
+public class BishiNowcoder {
 
 //    public static int solution(int a, int b) {
 //        return a + b;

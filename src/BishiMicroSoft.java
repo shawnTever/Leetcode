@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class MicroSoft {
+public class BishiMicroSoft {
 //    public int solution(int N) {
 //        List<Integer> l = new ArrayList<>();
 //        int result = 0;
@@ -113,7 +113,7 @@ public class MicroSoft {
     }
 
     public static void main(String[] args) {
-        MicroSoft microSoft = new MicroSoft();
+        BishiMicroSoft microSoft = new BishiMicroSoft();
 //        int[] i = new int[]{1,2,3};
 //        List<int[]> list = new ArrayList<>();
 //        list = Arrays.asList(i);

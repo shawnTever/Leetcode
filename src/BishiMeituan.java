@@ -1,6 +1,7 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Meituan {
+public class BishiMeituan {
 //    public static int solution(String s, String s1) {
 //        char[] ch = s.toCharArray();
 //        char[] ch1 = s1.toCharArray();
@@ -34,6 +35,7 @@ public class Meituan {
             tom = a[today - 1][yes - 1];
             m--;
         }
+        ArrayList<Node> arraylist = new ArrayList<> ();
         return tom;
     }
 
