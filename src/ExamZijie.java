@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class BishiZijie {
+public class ExamZijie {
 
     public static int count = 0;
     private static void recursive(int i, int j, int m, int n, ArrayList<String> arrayList) {

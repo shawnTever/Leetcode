@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class BishiMeituan {
+public class ExamMeituan {
 //    public static int solution(String s, String s1) {
 //        char[] ch = s.toCharArray();
 //        char[] ch1 = s1.toCharArray();
