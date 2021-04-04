@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-public class BishiTengxun {
+public class ExamTengxun {
 
 //    public ListNode solve (ListNode S) {
 //        // write code here
