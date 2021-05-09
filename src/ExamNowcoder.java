@@ -28,11 +28,16 @@ public class ExamNowcoder {
 //            }
 //        }
 
-        while (sc.hasNext()) {
-            String s = sc.nextLine();
-            String[] str = s.split(" ");
-            System.out.println(Long.parseLong(str[0]) + Long.parseLong(str[1]));
-        }
+//        while (sc.hasNext()) {
+//            String s = sc.nextLine();
+//            String[] str = s.split(" ");
+//            System.out.println(Long.parseLong(str[0]) + Long.parseLong(str[1]));
+//        }
+
+        String s = sc.nextLine();
+        String[] strings = s.split(" ");
+        System.out.println(strings[strings.length - 1].length());
+
 
     }
 
