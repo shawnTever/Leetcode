@@ -1,7 +1,8 @@
+import lombok.Getter;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
-
 public class ali {
     private static void swap(char[] chars, int i, int position) {
         char c = chars[position];
