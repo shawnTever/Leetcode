@@ -1,4 +1,4 @@
-public class _offer33_verifyPostorder {
+public class offer33_verifyPostorder {
     public boolean verifyPostorder(int[] postorder) {
         return recursive(postorder, 0, postorder.length - 1);
     }
@@ -15,7 +15,7 @@ public class _offer33_verifyPostorder {
 
     public static void main(String[] args) {
         int[] postorder = new int[]{1, 2, 5, 10, 6, 9, 4, 3};
-        _offer33_verifyPostorder verifyPostorder = new _offer33_verifyPostorder();
+        offer33_verifyPostorder verifyPostorder = new offer33_verifyPostorder();
         System.out.println(verifyPostorder.verifyPostorder(postorder));
 
     }
